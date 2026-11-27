@@ -1,0 +1,19 @@
+# sync-ai-agents (agentsync)
+
+> Unified configuration, coding rules, reusable skills, Model Context Protocol (MCP) sync, and secret-hygiene CLI for AI coding agents.
+
+## Overview
+`sync-ai-agents` (`agentsync`) lets developers define project rules, architecture notes, reusable agent skills, and MCP servers once in `agent.yaml`, and synchronize them across Cursor, Claude Code, Cline, OpenCode, and Aider.
+
+## Key Capabilities
+- **Multi-Agent Config Sync (`agentsync sync`)**: Generates `.cursorrules`, `.cursor/mcp.json`, `CLAUDE.md`, `.mcp.json`, `.clinerules`, `.opencode/instructions.md`, `opencode.json`, `CONVENTIONS.md`, and `.aider.conf.yml` from a single Zod-validated `agent.yaml`.
+- **Reverse Import (`agentsync import`)**: Migrates existing hand-written agent config files into `agent.yaml`.
+- **Secret Scanner (`agentsync scan`)**: Detects leaked API keys (OpenAI, Anthropic, Gemini, AWS, GitHub, Stripe, Slack), private keys, and high-entropy tokens, with optional Git `pre-commit` hook installation (`--install-hook`).
+- **Environment Hygiene (`agentsync env`)**: Generates `.env.example` with safe placeholders and enforces `.env` rules in `.gitignore`.
+- **Drift & Health Check (`agentsync doctor`)**: Verifies `agent.yaml` schema validity, generated file sync state, `.gitignore` rules, and pre-commit hook status.
+- **Live Watch Mode (`agentsync sync --watch`)**: Re-syncs all configured AI agent targets automatically when `agent.yaml` changes.
+
+## Links
+- Repository: https://github.com/BodaMark/sync-ai-agents
+- README: https://github.com/BodaMark/sync-ai-agents/blob/main/README.md
+- Issues: https://github.com/BodaMark/sync-ai-agents/issues

@@ -141,6 +141,11 @@ security:
     - "^[0-9a-fA-F]{32}$"
 ```
 
+## AI & Agent Discoverability
+
+- **Machine-Readable Index:** See [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md) for structured project context indexed by AI coding agents and LLM search engines.
+- **Common Use Cases:** Syncing `.cursorrules` with `CLAUDE.md`, sharing MCP server definitions across Cursor / Claude Code / OpenCode, preventing `.env` and API key leaks before `git commit`, and migrating legacy AI assistant configs into a single `agent.yaml`.
+
 ## License
 
 MIT
