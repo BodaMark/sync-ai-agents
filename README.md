@@ -21,9 +21,14 @@ Developers and teams switching between Cursor, Claude Code, Cline, OpenCode, and
 
 ## Demo Videos
 
-- [1. One Config to 5 AI Coding Agents (init & sync)](assets/demos/01-sync-agents.mp4)
-- [2. Secret Scanner & .env Hygiene (scan, env, doctor)](assets/demos/02-secret-scanner-hygiene.mp4)
-- [3. Reverse Import & Live Watch Mode (import & --watch)](assets/demos/03-reverse-import-watch.mp4)
+### 1. One Config to 5 AI Coding Agents (`init` & `sync`)
+![One Config to 5 AI Coding Agents](assets/demos/01-sync-agents.gif)
+
+### 2. Secret Scanner & `.env` Hygiene (`scan`, `env`, `doctor`)
+![Secret Scanner & .env Hygiene](assets/demos/02-secret-scanner-hygiene.gif)
+
+### 3. Reverse Import & Live Watch Mode (`import` & `--watch`)
+![Reverse Import & Live Watch Mode](assets/demos/03-reverse-import-watch.gif)
 
 ## Quick Start
 
