@@ -1,5 +1,6 @@
 # sync-ai-agents (`agentsync`)
 
+[![npm version](https://img.shields.io/npm/v/sync-ai-agents.svg)](https://www.npmjs.com/package/sync-ai-agents)
 [![CI](https://github.com/BodaMark/sync-ai-agents/actions/workflows/ci.yml/badge.svg)](https://github.com/BodaMark/sync-ai-agents/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js >= 18](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](package.json)
@@ -34,13 +35,20 @@ Developers and teams switching between Cursor, Claude Code, Cline, OpenCode, and
 
 ```bash
 # Initialize agent.yaml in your project
-npx agentsync init
+npx sync-ai-agents init
 
 # Generate configuration files for all configured agents
-npx agentsync sync
+npx sync-ai-agents sync
 
 # Scan repository for leaked secrets
-npx agentsync scan
+npx sync-ai-agents scan
+```
+
+Or install globally to use either `sync-ai-agents` or `agentsync`:
+
+```bash
+npm install -g sync-ai-agents
+agentsync sync
 ```
 
 ## Supported Agents & Generated Files
