@@ -1,11 +1,12 @@
 {
-  "name": "agentsync",
+  "name": "sync-ai-agents",
   "version": "0.1.0",
   "description": "Unified configuration, rules, skills, and MCP sync tool for AI coding agents",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "agentsync": "./dist/index.js"
+    "sync-ai-agents": "dist/index.js",
+    "agentsync": "dist/index.js"
   },
   "files": [
     "dist",
@@ -17,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BodaMark/sync-ai-agents.git"
+    "url": "git+https://github.com/BodaMark/sync-ai-agents.git"
   },
   "homepage": "https://github.com/BodaMark/sync-ai-agents#readme",
   "bugs": {
@@ -55,7 +56,7 @@
     "typescript",
     "sync"
   ],
-  "author": "",
+  "author": "BodaMark",
   "license": "MIT",
   "dependencies": {
     "@clack/prompts": "^0.8.2",
